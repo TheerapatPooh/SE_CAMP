@@ -9,8 +9,10 @@
             grid-template-columns: 120px 300px;
         }
         .grid-item {
+            margin-top: 5px;
             font-size: 16px;
-            text-align: left;
+            display: flex;
+            align-items: center;
         }
     </style>
     <title>Sample Form</title>
@@ -46,7 +48,9 @@
             <label>เพศ</label>
         </div>
         <div class="grid-item">
+            <input type="radio" id="male" name="gender" value="male">
             <label for="male">ชาย</label>
+            &nbsp;
             <input type="radio" id="female" name="gender" value="female">
             <label for="female">หญิง</label>
         </div>
@@ -78,17 +82,21 @@
         <div class="grid-item">
             <input type="checkbox" id="song_for_life" name="favorite_music" value="song_for_life">
             <label for="song_for_life">เพื่อชีวิต</label>
+            &nbsp;
             <input type="checkbox" id="folk_song" name="favorite_music" value="folk_song">
             <label for="folk_song">ลูกทุ่ง</label>
+            &nbsp;
             <input type="checkbox" id="etc" name="favorite_music" value="etc">
             <label for="etc">อื่นๆ</label>
         </div>
     </div>
     <br>
+    <br>
     <input type="checkbox" id="accept" name="submit" value="accept">
     <label for="submit">ยินยอมให้เก็บข้อมูล</label>
     <br>
+    <br>
     <input type="reset" value="Reset">
+    &emsp;    &emsp;    &emsp;    &emsp;    &emsp;    &emsp;    &emsp;
     <input type="submit" value="Submit">
 </body>
-</html>
