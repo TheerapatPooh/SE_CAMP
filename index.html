@@ -1,3 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .grid-container{
+            display: inline-grid;
+            grid-template-columns: 120px 300px;
+        }
+        .grid-item {
+            font-size: 16px;
+            text-align: left;
+        }
+    </style>
+    <title>Sample Form</title>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <label for="name">ชื่อ</label>
+        </div>
+        <div class="grid-item">
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="grid-item">
+            <label for="lastname">สกุล</label>
+        </div>
+        <div class="grid-item">
+            <input type="text" id="lastname" name="lastname" required>
+        </div>
+        <div class="grid-item">
+            <label for="date">วัน/เดือน/ปีเกิด</label>
+        </div>
+        <div class="grid-item">
+            <input type="date" id="date" name="date" required>
+        </div>
+        
+        <div class="grid-item">
+            <label for="age">อายุ</label>
+        </div>
+        <div class="grid-item">
+            <input type="number" id="age" name="age" required>
+        </div>
+        <div class="grid-item">
+            <label>เพศ</label>
+        </div>
+        <div class="grid-item">
+            <label for="male">ชาย</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">หญิง</label>
+        </div>
+        <div class="grid-item">
+            <label for="photo">รูป</label>
+        </div>
+        <div class="grid-item">
+            <input type="file" id="photo" name="photo" accept="image/*">
+        </div>
+        <div class="grid-item">
+            <label for="address">ที่อยู่</label>
+        </div>
+        <div class="grid-item">
+            <textarea rows="6" cols="20"></textarea>
+        </div>
+        <div class="grid-item">
+            <label for="favorite_color">สีที่ชอบ</label>
+        </div>
+        <div class="grid-item">
+            <select id="favorite_color" name="favorite_color">
+                <option value="red">สีแดง</option>
+                <option value="green">สีเขียว</option>
+                <option value="blue">สีน้ำเงิน</option>
+            </select>
+        </div>
+        <div class="grid-item">
+            <label>แนวเพลงที่ชอบ</label>
+        </div>
+        <div class="grid-item">
+            <input type="checkbox" id="song_for_life" name="favorite_music" value="song_for_life">
+            <label for="song_for_life">เพื่อชีวิต</label>
+            <input type="checkbox" id="folk_song" name="favorite_music" value="folk_song">
+            <label for="folk_song">ลูกทุ่ง</label>
+            <input type="checkbox" id="etc" name="favorite_music" value="etc">
+            <label for="etc">อื่นๆ</label>
+        </div>
+    </div>
+    <br>
+    <input type="checkbox" id="accept" name="submit" value="accept">
+    <label for="submit">ยินยอมให้เก็บข้อมูล</label>
+    <br>
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit">
+</body>
 </html>
