@@ -1,32 +1,47 @@
 <html>
-    <head>Hello</head>
-    <body>
-        <h1>This is php <?php echo 'Hello World!'; ?></h1>
-        <div>
-            <p>1</p>
-            <?php
-            $var_a = 1;
-            $var_a = "1$var_a"; // 1 1
-            print_r($var_a);
-            echo "<br>" ;
-            echo $var_a . "2"; //12,3
-            $arry = array();
-            $arry = [];
-            $arry[] = 1;
-            $arry[] = 2;
-            $arry[0] = 3;
-            print_r($arry);
-            // count
-            //sizeof
-            for($i = 0;$i < sizeof($arry);$i++)
-            {
-                echo "<h1>my h1</h1>";
-            ?>
-            <p>2</p>
-            <?php
-            
-            ?>
-            }
-        </div>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="multiple.css">
+</head>
+
+<body>
+    <?php
+    $multi_x = isset($_POST['multi_x']) ? $_POST['multi_x'] : 2;
+    $value = 0;
+
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $multi_x = $_POST['multi_x'];
+    }
+    ?>
+
+    <h1>ตารางสูตรคูณแม่ <?php echo $multi_x ?></h1>
+
+    <form method="post" action="">
+        <label for="inputNumber">จงใส่เลข:</label>
+        <input type="number" name="multi_x" id="inputNumber" value="<?php echo $multi_x ?>">
+        <button type="submit" id="btn_calculate">คำนวณ</button>
+    </form>
+
+    <div id="multiplicationTable">
+        <?php
+        for ($i = 1; $i < 25; $i++) {
+            $value = $multi_x * $i;
+            echo "
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>$multi_x</td>
+                            <td>x</td>
+                            <td>$i</td>
+                            <td>=</td>
+                            <td>$value</td>
+                        </tr>
+                    </tbody>
+                </table>";
+        }
+        ?>
+    </div>
+
+</body>
+
 </html>
