@@ -57,7 +57,7 @@
 <body>
     <h1>Easy Multiplication Table</h1>
     <div class="box">
-        <form method="post" action="/my-route">
+        <form method="post" action="/my-controller4">
             @csrf
             <input type="number" placeholder="Please input number 1,2,3,..." name="myinput" id="input_number">
             <button type="submit" id="btn_submit">Generate Table</button>
