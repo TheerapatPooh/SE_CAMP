@@ -55,24 +55,31 @@
                             <div class="form-check">
                                 &emsp;
                               <input class="form-check-input" type="radio" name="gender" id="male">
-                              <label class="form-check-label" for="male">Male&ensp;<i class="fas fa-male"></i></label>
+                              <label class="form-check-label" for="male">Male&ensp;<i class="fas fa-mars"></i></label>
                               &emsp;&emsp;&emsp;
                               <input class="form-check-input" type="radio" name="gender" id="female">
-                              <label class="form-check-label" for="female">Female&ensp;<i class="fas fa-female"></i></label>
+                              <label class="form-check-label" for="female">Female&ensp;<i class="fas fa-venus"></i></label>
+                              &emsp;&emsp;&emsp;
+                              <input class="form-check-input" type="radio" name="gender" id="genderless">
+                              <label class="form-check-label" for="genderless">Genderless&ensp;<i class="fas fa-genderless"></i></label>
                             </div>
                         </div>
+                    <i class="far fa-image"></i>
                     <label for="inputPhoto" class="col-sm-2 col-form-label">Photo</label>
                         <div class="col-sm-10">
                             <div class="custom-file">
                                 <input type="file" class="custom-file-input" id="customFile">
-                                <label class="custom-file-label" for="customFile">Choose file</label>
-                            </div>                        </div>
+                                <label class="custom-file-label" for="customFile">Choose file&nbsp;<i class="fas fa-file-image"></i></i></label>
+                            </div>
+                        </div>
+                    <i class="fas fa-location-arrow"></i>
                     <label for="inputAddress" class="col-sm-2 col-form-label">Address</label>
                         <div class="col-sm-10">
                             <textarea class="form-control" rows="3" placeholder="Address ..."></textarea>
                         </div>
                     <div class="col-sm-6">
                         <div class="form-group">
+                        <i class="fas fa-palette"></i>
                           <label>Favorite color</label>
                           <select class="form-control">
                             <option>Red</option>
@@ -86,6 +93,7 @@
                       </div>
                       <div class="col-sm-6">
                         <div class="form-group">
+                        <i class="fab fa-itunes-note"></i>
                         <label>Music style</label>
                           <div class="custom-control custom-checkbox">
                             <input class="custom-control-input" type="checkbox" id="Pop" value="Pop">
@@ -118,8 +126,8 @@
                   </div>
                   <!-- /.card-body -->
                   <div class="card-footer">
-                    <button type="submit" class="btn btn-info">Submit</button>
-                    <button type="submit" class="btn btn-default float-right">Cancel</button>
+                    <button type="submit" class="btn btn-info"><i class="fas fa-check"></i>&nbsp;Submit</button>
+                    <button type="submit" class="btn btn-default float-right"><i class="fas fa-redo"></i>&nbsp;Reset</button>
                   </div>
                   <!-- /.card-footer -->
                 </form>
